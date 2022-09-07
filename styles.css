@@ -166,7 +166,7 @@ h2 {
 }
 
 .formContent{
-    padding:8px 24px;
+    padding:12px 24px;
     border-bottom: 1px rgba(188, 188, 188, 1) solid;
 }
 
@@ -176,4 +176,14 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: white;
+}
+
+.formButton {
+    padding:4px 24px;
+}
+
+button {
+
+    height: 32px;
+    font-size: 14px;
 }
