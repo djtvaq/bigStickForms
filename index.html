@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webflow Form Submission</title>
 
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -19,16 +18,26 @@
 
 
     <div class="header">
+        <img src="https://uploads-ssl.webflow.com/6138c8df177d7ed17a4cf0ab/613f58f0e90e8d6a2af72c69_BigStickLogoLandscape.png"
+            alt="Big Stick Logo" class="logo" width="150">
 
+        <h1 class="heading">Pro Jersey Quote</h1>
     </div>
 
     <div class="formWrapper">
 
         <div class="formGrid">
-            <p class="formContent formHeader">Name</p>
-            <p class="formContent formHeader">John Appleseed</p>
+            <div class="formContent formHeader">Name</div>
+            <div class="formContent formHeader">John Appleseed</div>
 
-            
+            <div class="formContent ">Page URL</div>
+            <div class="formContent formButton">
+                <a href="www.google.com" target="_blank">
+                    <button>Click to view page URL</button>
+                </a>
+            </div>
+
+
 
         </div>
     </div>
@@ -45,18 +54,18 @@
         let formGrid = document.querySelector('.formGrid')
         let newP = document.createElement('p')
         let newPClass = newP.classList.add('formContent')
-     
-        
-        for (let i=0; i<36; i++) {
+
+
+        for (let i = 0; i < 36; i++) {
             formGrid.appendChild(newP.cloneNode(true))
-    
+
 
         }
 
         let gridContent = formGrid.querySelectorAll('p')
         gridContent.forEach(grid => grid.textContent = 'this is a value')
 
-  
+
 
     </script>
 
