@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 ol,
@@ -149,3 +150,30 @@ h2 {
     line-height: 1.2;
 }
 
+
+.formWrapper {
+
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items:center;
+
+
+}
+
+.formContent{
+    padding:8px 24px;
+    border-bottom: 1px rgba(188, 188, 188, 1) solid;
+}
+
+.formHeader {
+    background-color: rgba(75, 75, 75, 1);
+    padding:4px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
