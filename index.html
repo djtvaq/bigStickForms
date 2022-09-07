@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webflow Form Submission</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700">
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -13,12 +17,49 @@
 <body>
 
 
-   
+
+    <div class="header">
+
+    </div>
+
+    <div class="formWrapper">
+
+        <div class="formGrid">
+            <p class="formContent formHeader">Name</p>
+            <p class="formContent formHeader">John Appleseed</p>
+
+            
+
+        </div>
+    </div>
+
+
+
     <footer>
         <div class="flexCenter">
             <p>Copyright Big Stick Custom Jerseys</p>
         </div>
     </footer>
+
+    <script>
+        let formGrid = document.querySelector('.formGrid')
+        let newP = document.createElement('p')
+        let newPClass = newP.classList.add('formContent')
+     
+        
+        for (let i=0; i<36; i++) {
+            formGrid.appendChild(newP.cloneNode(true))
+    
+
+        }
+
+        let gridContent = formGrid.querySelectorAll('p')
+        gridContent.forEach(grid => grid.textContent = 'this is a value')
+
+  
+
+    </script>
+
 </body>
 
 </html>
