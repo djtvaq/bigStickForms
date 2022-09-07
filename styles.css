@@ -137,6 +137,7 @@ table {
 
 body {
     font-size: 16px;
+    max-width: 1535px;
 }
 
 h1 {
@@ -159,31 +160,33 @@ h2 {
 
 .formGrid {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    align-items:center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(36, 36px);
+    align-items: stretch;
+    justify-items: stretch;
 
 
 }
 
-.formContent{
-    padding:12px 24px;
+.formContent {
+    padding-left: 24px;
+    line-height: 36px;
     border-bottom: 1px rgba(188, 188, 188, 1) solid;
 }
 
+
 .formHeader {
+    padding-left: 8px;
     background-color: rgba(75, 75, 75, 1);
-    padding:4px 24px;
     font-size: 24px;
     font-weight: bold;
     color: white;
 }
 
-.formButton {
-    padding:4px 24px;
-}
+
 
 button {
 
-    height: 32px;
+    height: 24x;
     font-size: 14px;
 }
