@@ -18,12 +18,22 @@ body {
 
 table {
     width: 100%;
+    table-layout: auto;
 }
-td, th {
+td, th, caption {
     padding-left: 24px;
     line-height: 36px;
     border-bottom: 1px rgba(188, 188, 188, 1) solid;
+    text-align: left;
 
+}
+
+tr th:nth-child(1) {
+    width: 25%;
+}
+
+tr th:nth-child(2) {
+    width: 75%;
 }
 .formContent {
     padding-left: 24px;
