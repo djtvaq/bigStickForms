@@ -3,29 +3,18 @@ body {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.formWrapper {
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.formGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(36, 36px);
-    align-items: stretch;
-    justify-items: stretch;
-}
-
 table {
     width: 100%;
     table-layout: auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-spacing: 0px;
 }
 td, th, caption {
     padding-left: 24px;
     line-height: 36px;
     border-bottom: 1px rgba(188, 188, 188, 1) solid;
     text-align: left;
-
 }
 
 tr th:nth-child(1) {
@@ -35,11 +24,7 @@ tr th:nth-child(1) {
 tr th:nth-child(2) {
     width: 75%;
 }
-.formContent {
-    padding-left: 24px;
-    line-height: 36px;
-    border-bottom: 1px rgba(188, 188, 188, 1) solid;
-}
+
 
 .formHeader {
     padding-left: 8px;
@@ -49,7 +34,11 @@ tr th:nth-child(2) {
     color: white;
 }
 
-button {
-    height: 24x;
-    font-size: 14px;
+.header {
+    margin-bottom: 24px;
+
+}
+
+h1 {
+    margin-bottom: 8px;
 }
